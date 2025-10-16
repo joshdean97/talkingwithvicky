@@ -19,6 +19,10 @@
 }
 html {
   scroll-behavior: smooth;
+  margin: 0;
+}
+body {
+  margin: 0;
 }
 
 /* Base reset */
@@ -33,6 +37,28 @@ a{color:inherit;text-decoration:none}
   display:flex; align-items:center; justify-content:space-between;
   font-family:system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
+/* Make sure the navbar itself isn't adding gaps */
+.navbar { position: sticky; top: 0; z-index: 1000; margin: 0; }
+
+/* Swap icons based on aria-expanded */
+.nav-toggle .icon--close { display: none; }
+.nav-toggle[aria-expanded="true"] .icon--menu { display: none; }
+.nav-toggle[aria-expanded="true"] .icon--close { display: block; }
+
+/* Mobile menu: overlay instead of taking layout space */
+@media (max-width: 768px){
+  .nav-links{
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--background, #fff);
+    max-height: 0; overflow: hidden;
+    transition: max-height .25s ease;
+  }
+  .nav-links[data-state="open"]{ max-height: 60vh; }
+}
+
+/* Optional: prevent top content from sticking to the bar visually */
+.hero { margin-top: 0; }
+
 
 /* Logo */
 .logo{display:flex; align-items:center; gap:.6rem}
@@ -69,9 +95,7 @@ a{color:inherit;text-decoration:none}
   .nav-links{
     position:absolute; left:0; right:0; top:100%;
     background:var(--background);
-    box-shadow:0 10px 30px rgba(0,0,0,.06);
     display:flex; flex-direction:column; gap:0;
-    padding:.5rem; 
     max-height:0; overflow:hidden;
     transition:max-height .25s ease;
   }
