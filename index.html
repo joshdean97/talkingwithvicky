@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talk With Vicky</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Nunito:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+        color: var(--text-color);
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="./td-logo.png"
+          alt="talking and drawing logo"
+          width="44"
+          height="44"
+        />
+        <h1>Talking &amp; Drawing With Vicky</h1>
+      </div>
+
+      <button
+        class="nav-toggle"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Open menu"
+      >
+        <!-- Menu (hamburger) -->
+        <svg
+          class="icon icon--menu"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            d="M3 6h18M3 12h18M3 18h18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <!-- Close (X) -->
+        <svg
+          class="icon icon--close"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            d="M6 6l12 12M6 18L18 6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+
+      <ul id="primary-nav" class="nav-links" data-state="closed">
+        <li><a href="#">Home</a></li>
+        <li><a href="#who">About</a></li>
+        <li><a href="#how">Services</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="hero__kicker">Ages 5–16 • Drawing & Talking Therapy</p>
+          <h1>Gentle support for anxious kids</h1>
+          <p class="hero__sub">
+            A calm, one-to-one therapeutic approach that helps children process
+            big feelings—without pressure to “perform” or explain.
+          </p>
+          <ul class="hero__benefits">
+            <li>Helps children make sense of feelings and their inner world</li>
+            <li>
+              Supports anxiety, withdrawal, trauma & attachment difficulties
+            </li>
+            <li>
+              Can reduce emotional pain and build confidence & self-esteem
+            </li>
+            <li>Delivered by an experienced school practitioner (10+ years)</li>
+          </ul>
+
+          <div class="hero__ctas cta">
+            <div class="cta__row">
+              <a id="bookChat" href="#" class="btn btn--primary"
+                >Book a free 15-minute chat</a
+              >
+              <button id="messageVicky" class="contact-btn secondary">
+                Message Vicky
+              </button>
+            </div>
+            <p class="cta__trust">
+              <span aria-hidden="true">🔒</span> Secure booking via Calendly •
+              No card needed
+            </p>
+          </div>
+
+          <p class="hero__reassure">
+            On a CAMHS waiting list? This can offer gentle support in the
+            meantime.
+          </p>
+
+          <p class="hero__trust">
+            DBS checked • Safeguarding trained • Based in Leeds • Online &
+            in-school options
+          </p>
+        </div>
+
+        <div class="hero__art">
+          <!-- Use your transparent PNG -->
+          <img
+            src="anxiety-hero.png"
+            width="560"
+            height="560"
+            alt="Cartoon child looking worried with small storm clouds and scribbles, representing anxiety"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="section who" id="who">
+      <div class="container">
+        <header class="section-head">
+          <h2>Who we help</h2>
+          <p class="eyebrow">Attachment-based, early intervention for:</p>
+        </header>
+
+        <ul class="chip-grid">
+          <li><a class="chip" href="#contact">Young carers</a></li>
+          <li>
+            <a class="chip chip--accent" href="#contact">Waiting for CAMHS</a>
+          </li>
+          <li><a class="chip" href="#contact">School avoidance</a></li>
+          <li><a class="chip" href="#contact">Special Educational Needs</a></li>
+          <li><a class="chip" href="#contact">Anxiety</a></li>
+          <li><a class="chip" href="#contact">Family separation</a></li>
+          <li><a class="chip" href="#contact">Bullying</a></li>
+          <li><a class="chip" href="#contact">Friendship problems</a></li>
+          <li><a class="chip" href="#contact">Bereavement &amp; loss</a></li>
+        </ul>
+
+        <a id="messageLink" class="text-link arrow" href="#contact">
+          Not sure if it’s a fit? Message Vicky
+        </a>
+      </div>
+    </section>
+    <section class="section how" id="how">
+      <div class="container how__grid">
+        <header class="section-head how__head">
+          <h2>How Drawing &amp; Talking works</h2>
+          <p class="eyebrow">
+            12 gentle sessions • 30 minutes • once a week • one-to-one
+          </p>
+
+          <div class="how__pills" aria-hidden="true">
+            <span class="pill">12 sessions</span>
+            <span class="pill">30 minutes</span>
+            <span class="pill">Weekly</span>
+            <span class="pill">1:1</span>
+          </div>
+        </header>
+
+        <ol class="steps" aria-label="Process">
+          <li>
+            <h3>1&#41; Safe start</h3>
+            <p>
+              We build trust and explain the space. No pressure to talk — the
+              child leads.
+            </p>
+          </li>
+          <li>
+            <h3>2&#41; Draw &amp; tell</h3>
+            <p>
+              They draw anything they like. We use simple storytelling &amp;
+              metaphors to help make sense of feelings.
+            </p>
+          </li>
+          <li>
+            <h3>3&#41; Close &amp; support</h3>
+            <p>
+              We gently round off the 12 sessions and share helpful guidance for
+              home/school.
+            </p>
+          </li>
+        </ol>
+
+        <!-- <aside class="how__callout">
+      On a <strong>CAMHS waiting list?</strong> This offers calm, structured support in the meantime.
+    </aside> -->
+
+        <div class="how__cta">
+          <a class="btn btn--primary" href="#contact"
+            >Is this right for my child?</a
+          >
+          <a class="btn btn--ghost" href="#contact">Ask a quick question</a>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="/" class="footer__logo">
+            <img
+              src="td-logo.png"
+              alt=""
+              width="40"
+              height="40"
+              aria-hidden="true"
+            />
+            <span>Talking &amp; Drawing With Vicky</span>
+          </a>
+          <p class="footer__tag">
+            Gentle one-to-one support for children (5–16).
+          </p>
+
+          <div class="footer__trust">
+            <span class="badge">DBS checked</span>
+            <span class="badge">Safeguarding trained</span>
+            <span class="badge">Leeds + online</span>
+          </div>
+
+          <div class="footer__payments">
+            <span class="mini">Secure payments via</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 64 24"
+              height="20"
+            >
+              <rect width="64" height="24" rx="4" fill="#635BFF" />
+              <text
+                x="50%"
+                y="50%"
+                text-anchor="middle"
+                dy=".35em"
+                font-family="Arial, sans-serif"
+                font-size="11"
+                fill="#fff"
+              >
+                Stripe
+              </text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <nav class="footer__col" aria-label="Footer navigation">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html#who">Who we help</a></li>
+            <li><a href="index.html#how">How it works</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#" id="footerBook">Book a free chat</a></li>
+          </ul>
+        </nav>
+
+        <!-- Services -->
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li>
+              <a href="services.html#drawing">1:1 Drawing &amp; Talking</a>
+            </li>
+            <li><a href="services.html#sandplay">1:1 Sandplay</a></li>
+            <li><a href="services.html#groups">Group work</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:vickyscraftymoments@gmail.com"
+                >vickyscraftymoments@gmail.com</a
+              >
+            </li>
+            <li><a href="tel:+447909486090">+447909486090</a></li>
+            <li>Leeds, United Kingdom</li>
+          </ul>
+          <div class="social">
+            <a
+              href="https://www.facebook.com/yourpage"
+              aria-label="Facebook"
+              class="soc"
+            >
+              <!-- FB icon -->
+              <svg
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                aria-hidden="true"
+              >
+                <path
+                  d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.3V12h2.3V9.7c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.4.7-1.4 1.4V12h2.6l-.4 2.9h-2.2v7A10 10 0 0 0 22 12z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/447909486090"
+              aria-label="WhatsApp"
+              class="soc"
+            >
+              <!-- WhatsApp icon -->
+              <svg
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.5 3.5A11 11 0 0 0 2.6 18.2L2 22l3.9-1a11 11 0 0 0 5.2 1.3h0A11 11 0 0 0 20.5 3.5Zm-8.4 16a9 9 0 0 1-4.6-1.3l-.3-.2-2.7.7.7-2.6-.2-.3A9 9 0 1 1 12.1 19.5Zm5-6.4c-.3-.2-1.7-.8-2-.9s-.5-.1-.7.2-.8.9-1 .9-.5 0-.8-.3a6.4 6.4 0 0 1-2-1.3 7 7 0 0 1-1.3-2c-.1-.3 0-.5.3-.8l.3-.4c.2-.2.3-.4.4-.5a.7.7 0 0 0 0-.7c0-.2-.7-1.7-1-2.3s-.6-.5-.8-.5h-.7a1.4 1.4 0 0 0-1 .5 4.1 4.1 0 0 0-1.3 3c0 1.8 1.3 3.6 1.5 3.9a11 11 0 0 0 4.3 4.3c.4.2 2.1.8 3.8.9h.3c1.2 0 2.4-.5 2.7-1.2s.3-1.6.2-1.7-.2-.2-.5-.4Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <button class="soc" id="footerMsg" aria-label="Message Vicky">
+              💬
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container footer__bottom__grid">
+          <p class="legal">
+            © <span id="year"></span> Talking &amp; Drawing With Vicky. All
+            rights reserved.
+          </p>
+          <ul class="meta-links">
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="safeguarding.html">Safeguarding</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <h3>Choose how you’d like to message</h3>
+        <a href="https://wa.me/447123456789" target="_blank" class="btn"
+          >💬 WhatsApp</a
+        >
+        <a href="https://m.me/yourpageid" target="_blank" class="btn btn--ghost"
+          >📘 Messenger</a
+        >
+        <button class="close">&times;</button>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const modal = document.getElementById("contactModal");
+        if (!modal) return;
+
+        const closeBtn = modal.querySelector(".close");
+
+        // Any elements that should open the modal
+        const openers = [
+          document.getElementById("messageVicky"), // hero button
+          document.getElementById("messageLink"), // "Not sure if it’s a fit?" link
+          document.getElementById("footerMsg"), // footer chat icon (if present)
+          ...document.querySelectorAll(".btn--message"), // optional class-based opener(s)
+        ].filter(Boolean);
+
+        // Focus management
+        let lastFocused = null;
+        const focusablesSelector = [
+          "a[href]",
+          "area[href]",
+          "button:not([disabled])",
+          'input:not([disabled]):not([type="hidden"])',
+          "select:not([disabled])",
+          "textarea:not([disabled])",
+          "iframe",
+          "summary",
+          '[tabindex]:not([tabindex="-1"])',
+          '[contenteditable="true"]',
+        ].join(",");
+
+        function getFocusable(container) {
+          return Array.from(
+            container.querySelectorAll(focusablesSelector)
+          ).filter(
+            (el) => el.offsetParent !== null || el === document.activeElement
+          );
+        }
+
+        function openModal() {
+          lastFocused = document.activeElement;
+
+          // Recommended ARIA (add these to your modal markup if you haven't):
+          // <div id="contactModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+          modal.style.display = "flex";
+          modal.classList.add("open");
+          document.documentElement.style.overflow = "hidden"; // prevent background scroll
+
+          // move focus into modal
+          const focusables = getFocusable(modal);
+          (focusables[0] || closeBtn || modal).focus();
+        }
+
+        function closeModal() {
+          modal.classList.remove("open");
+          modal.style.display = "none";
+          document.documentElement.style.overflow = ""; // restore scroll
+          if (lastFocused && typeof lastFocused.focus === "function") {
+            lastFocused.focus();
+          }
+        }
+
+        // Wire openers
+        openers.forEach((opener) => {
+          opener.addEventListener("click", (e) => {
+            e.preventDefault();
+            openModal();
+          });
+        });
+
+        // Close button
+        if (closeBtn) closeBtn.addEventListener("click", closeModal);
+
+        // Click outside (overlay)
+        modal.addEventListener("mousedown", (e) => {
+          // only if clicking the overlay, not the content
+          if (e.target === modal) closeModal();
+        });
+
+        // Esc to close + focus trap
+        modal.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            e.preventDefault();
+            closeModal();
+            return;
+          }
+          if (e.key === "Tab") {
+            const focusables = getFocusable(modal);
+            if (!focusables.length) return;
+            const first = focusables[0];
+            const last = focusables[focusables.length - 1];
+
+            if (e.shiftKey && document.activeElement === first) {
+              e.preventDefault();
+              last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+              e.preventDefault();
+              first.focus();
+            }
+          }
+        });
+
+        // Optional: expose for other scripts
+        window.openContactModal = openModal;
+        window.closeContactModal = closeModal;
+      })();
+    </script>
+
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
+    <script>
+      // Ensure Calendly script is present, then open the popup
+      function openCalendly(url) {
+        const launch = () => window.Calendly.initPopupWidget({ url });
+        if (window.Calendly) {
+          launch();
+          return;
+        }
+
+        // If not loaded yet, load it and then launch
+        const s = document.createElement("script");
+        s.src = "https://assets.calendly.com/assets/external/widget.js";
+        s.async = true;
+        s.onload = launch;
+        document.head.appendChild(s);
+      }
+
+      document
+        .getElementById("bookChat")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          openCalendly("https://calendly.com/vickyscraftymoments/30min");
+        });
+    </script>
+    <script>
+      // year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Calendly popup on footer link
+      const footerBook = document.getElementById("footerBook");
+      if (footerBook) {
+        footerBook.addEventListener("click", (e) => {
+          e.preventDefault();
+          window.Calendly
+            ? Calendly.initPopupWidget({
+                url: "https://calendly.com/vickyscraftymoments/30min",
+              })
+            : (() => {
+                const s = document.createElement("script");
+                s.src = "https://assets.calendly.com/assets/external/widget.js";
+                s.async = true;
+                s.onload = () =>
+                  Calendly.initPopupWidget({
+                    url: "https://calendly.com/vickyscraftymoments/30min",
+                  });
+                document.head.appendChild(s);
+              })();
+        });
+      }
+
+      // Message Vicky (reuse your existing modal)
+      const footerMsg = document.getElementById("footerMsg");
+      if (footerMsg && window.document.getElementById("contactModal")) {
+        footerMsg.addEventListener("click", () => {
+          document.getElementById("contactModal").style.display = "flex";
+        });
+      }
+    </script>
+  </body>
+</html>
